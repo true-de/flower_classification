@@ -16,7 +16,7 @@ This project is a deep learning-based flower classification system that identifi
 - `training_history.json`: Training metrics.
 - `model_metrics.json`: Evaluation metrics.
 - `training_history.png`, `confusion_matrix.png`, `class_confidence.png`: Visualization images.
-- `flower/flower_images/`: Dataset directory with subfolders for each flower class.
+- `flower/flower_images/`: Dataset directory with subfolders for each flower class. Source: [Classification of Flower Dataset](https://www.kaggle.com/datasets/thetruedefenders/classification-of-flower) <mcreference link="https://www.kaggle.com/datasets/thetruedefenders/classification-of-flower" index="0">0</mcreference>
 
 ## Installation
 1. Clone the repository.
