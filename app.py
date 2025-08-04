@@ -900,8 +900,6 @@ def main():
                     # Continue with your existing advanced analysis section
                     if show_analysis:
                         st.markdown("### 🔬 Advanced Analysis")
-                        if show_analysis:
-                        st.markdown("### 🔬 Advanced Analysis")
                         col1, col2 = st.columns(2)
 
                         with col1:
