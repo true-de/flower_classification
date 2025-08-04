@@ -1,0 +1,115 @@
+{
+  "accuracy": 0.924,
+  "macro_avg_f1": 0.9229172250185418,
+  "weighted_avg_f1": 0.9229172250185418,
+  "confusion_matrix": [
+    [
+      186,
+      3,
+      4,
+      5,
+      2
+    ],
+    [
+      3,
+      192,
+      1,
+      2,
+      2
+    ],
+    [
+      2,
+      4,
+      187,
+      3,
+      4
+    ],
+    [
+      1,
+      0,
+      1,
+      198,
+      0
+    ],
+    [
+      11,
+      9,
+      13,
+      6,
+      161
+    ]
+  ],
+  "classification_report": {
+    "Daisy": {
+      "precision": 0.916256157635468,
+      "recall": 0.93,
+      "f1-score": 0.9230769230769231,
+      "support": 200.0
+    },
+    "Lavender": {
+      "precision": 0.9230769230769231,
+      "recall": 0.96,
+      "f1-score": 0.9411764705882353,
+      "support": 200.0
+    },
+    "Lotus": {
+      "precision": 0.9077669902912622,
+      "recall": 0.935,
+      "f1-score": 0.9211822660098522,
+      "support": 200.0
+    },
+    "Sunflower": {
+      "precision": 0.9252336448598131,
+      "recall": 0.99,
+      "f1-score": 0.9565217391304348,
+      "support": 200.0
+    },
+    "Tulip": {
+      "precision": 0.9526627218934911,
+      "recall": 0.805,
+      "f1-score": 0.8726287262872628,
+      "support": 200.0
+    },
+    "accuracy": 0.924,
+    "macro avg": {
+      "precision": 0.9249992875513915,
+      "recall": 0.924,
+      "f1-score": 0.9229172250185418,
+      "support": 1000.0
+    },
+    "weighted avg": {
+      "precision": 0.9249992875513915,
+      "recall": 0.924,
+      "f1-score": 0.9229172250185418,
+      "support": 1000.0
+    }
+  },
+  "confidence_analysis": {
+    "Daisy": {
+      "mean_confidence": 0.954542875289917,
+      "std_confidence": 0.10609573870897293,
+      "correct_predictions": 186.0
+    },
+    "Lavender": {
+      "mean_confidence": 0.967943012714386,
+      "std_confidence": 0.10453889518976212,
+      "correct_predictions": 192.0
+    },
+    "Lotus": {
+      "mean_confidence": 0.8978092670440674,
+      "std_confidence": 0.15544690191745758,
+      "correct_predictions": 187.0
+    },
+    "Sunflower": {
+      "mean_confidence": 0.9668048620223999,
+      "std_confidence": 0.06754034757614136,
+      "correct_predictions": 198.0
+    },
+    "Tulip": {
+      "mean_confidence": 0.8816155195236206,
+      "std_confidence": 0.17252685129642487,
+      "correct_predictions": 161.0
+    }
+  },
+  "evaluation_date": "2025-07-31T12:32:34.286022"
+}

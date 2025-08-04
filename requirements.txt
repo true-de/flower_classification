@@ -1,0 +1,8 @@
+tensorflow-cpu
+keras
+streamlit
+numpy
+matplotlib
+scikit-learn
+pillow
+plotly
