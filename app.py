@@ -693,16 +693,15 @@ def show_helpful_suggestions():
         - Ensure the flower is in focus
         """)
         
-   with col2:
-       st.markdown("""
-       **🌸 Supported Flowers:**
-       - 🌼 Daisy - White petals, yellow center
-       - 💜 Lavender - Purple spikes, fragrant
-       - 🌸 Lotus - Large, broad petals, often pink or white
-       - 🌻 Sunflower - Large, bright yellow
-       - 🌷 Tulip - Cup-shaped, smooth petals
-       """)
-
+    with col2:
+        st.markdown("""
+        **🌸 Supported Flowers:**
+        - 🌼 Daisy - White petals, yellow center
+        - 💜 Lavender - Purple spikes, fragrant
+        - 🌸 Lotus - Large, broad petals, often pink or white
+        - 🌻 Sunflower - Large, bright yellow
+        - 🌷 Tulip - Cup-shaped, smooth petals
+        """)
 
 # Main app
 def main():
