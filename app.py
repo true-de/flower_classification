@@ -900,7 +900,47 @@ def main():
                     # Continue with your existing advanced analysis section
                     if show_analysis:
                         st.markdown("### 🔬 Advanced Analysis")
-                        # ... your existing advanced analysis code here
+                        if show_analysis:
+                        st.markdown("### 🔬 Advanced Analysis")
+                        col1, col2 = st.columns(2)
+
+                        with col1:
+                            st.markdown("#### 🎨 Color Analysis")
+                            color_dom, edge_density = analyze_image_features(image)
+
+                            # Color dominance chart
+                            fig_color = px.bar(
+                                x=list(color_dom.keys()),
+                                y=list(color_dom.values()),
+                                color=list(color_dom.keys()),
+                                color_discrete_map={'Red': 'red', 'Green': 'green', 'Blue': 'blue'},
+                                title="Color Dominance"
+                            )
+                            st.plotly_chart(fig_color, use_container_width=True)
+
+                        with col2:
+                            st.markdown("#### 🔍 Image Properties")
+                            st.markdown(f"""
+                            <div class="info-box">
+                                <strong>Image Size:</strong> {image.size[0]} × {image.size[1]} pixels<br>
+                                <strong>Mode:</strong> {image.mode}<br>
+                                <strong>Edge Density:</strong> {edge_density:.3f}<br>
+                                <strong>Texture:</strong> {"High detail" if edge_density > 0.1 else "Smooth"}
+                            </div>
+                            """, unsafe_allow_html=True)
+
+                            # Model confidence metrics
+                            entropy = -np.sum(predictions * np.log(predictions + 1e-10))
+                            max_conf = np.max(predictions)
+
+                            st.markdown("#### 🎯 Prediction Metrics")
+                            st.markdown(f"""
+                            <div class="info-box">
+                                <strong>Prediction Entropy:</strong> {entropy:.3f}<br>
+                                <strong>Max Confidence:</strong> {max_conf:.3f}<br>
+                                <strong>Certainty:</strong> {"High" if max_conf > 0.8 else "Medium" if max_conf > 0.5 else "Low"}
+                            </div>
+                            """, unsafe_allow_html=True)
 
                 # Show helpful suggestions for failed predictions
                 elif not show_detailed_analysis:
