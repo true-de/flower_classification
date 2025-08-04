@@ -3,7 +3,6 @@ import numpy as np
 from PIL import Image, ImageEnhance, ImageFilter
 import io
 import os
-# opencv-python
 import cv2
 import plotly.graph_objects as go
 import plotly.express as px
